@@ -22,7 +22,31 @@ function bs_blocker_install() {
 function bs_blocker_ip_patterns() {
   return array(
     '77.243.161.175',
+    '212.136.193.216',
+    '212.136.193.217',
+    '212.136.193.218',
+    '212.136.193.219',
+    '212.136.193.220',
+    '212.136.193.221',
+    '212.136.193.222',
+    '212.136.193.223',
+    '213.208.242.166',
+    '213.208.242.167',
+    '213.208.242.168',
+    '213.208.242.160',
     //pls contact me at twitter:berkes, IM:berkes@jabber.org.uk or on 
     //  bler.webschuur.com/bs_blocker if you know more patterns for the Teezir bot.
+    
+    //Initial IPs from http://coenjacobs.net/blog/steps-blocking-buma-crawlers-wordpress
   );
+}
+
+function bs_blocker_update_6001() {
+  $patterns = bs_blocker_ip_patterns();
+  unset($patterns[0]);//already instered in first install run 0.1
+  
+  foreach($patterns as $pattern) {
+    db_query("INSERT INTO {access} (mask, type, status) VALUES ('%s', '%s', %d)", $pattern, 'host', 0);
+    watchdog('action', 'Banned IP address %ip', array('%ip' => $pattern));
+  }
 }
