@@ -1,0 +1,6 @@
+; $Id$'
+
+name = BS blocker
+description = Block the Buma Stemra Copyright crawler on your site
+core = 6.x
+[dependencies_chunk]

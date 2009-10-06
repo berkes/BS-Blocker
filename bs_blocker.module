@@ -1,0 +1,20 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Block the Buma/Stemra Copyright crawler on your site
+ * @author Bèr Kessels <ber@webschuur.com>
+ * @link http://webschuur.com
+ * @package bs_blocker
+ */
+
+/* -----------------------------------------------------------------
+
+  Hook Implementations
+
+------------------------------------------------------------------ */
+
+/**
+ Does nothing. All the magic lives in the .install file
+ **/
