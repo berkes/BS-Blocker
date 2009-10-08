@@ -1,0 +1,42 @@
+# Buma
+deny from 212.136.193.216
+deny from 212.136.193.217
+deny from 212.136.193.218
+deny from 212.136.193.219
+deny from 212.136.193.220
+deny from 212.136.193.221
+deny from 212.136.193.222
+deny from 212.136.193.223
+
+# Buma-Stemra
+deny from 213.208.242.160
+deny from 213.208.242.161
+deny from 213.208.242.162
+deny from 213.208.242.163
+deny from 213.208.242.164
+deny from 213.208.242.165
+deny from 213.208.242.166
+deny from 213.208.242.167
+deny from 213.208.242.168
+
+# Buma-Stemra
+deny from 212.78.179.24_
+deny from 212.78.179.250
+deny from 212.78.179.251
+deny from 212.78.179.252
+deny from 212.78.179.253
+deny from 212.78.179.254
+deny from 212.78.179.255
+
+# Brein
+deny from 94.75.218.%
+
+# Sena
+deny from 62.177.154.16
+deny from 62.177.154.17
+deny from 62.177.154.18
+deny from 62.177.154.19
+deny from 62.177.154.20
+deny from 62.177.154.21
+deny from 62.177.154.22
+deny from 62.177.154.23
